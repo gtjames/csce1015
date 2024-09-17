@@ -16,7 +16,7 @@ print(my_list[0])  # Output: 1
 
 # Modifying list elements
 my_list[0] = 10
-my_list[5] = 10
+#   my_list[5] = 10     index out of range
 
 # Looping through a list
 for element in my_list:
@@ -39,9 +39,10 @@ else:
 
 # Taking user input
 name = input("Enter your name: ")
+age  = input("Enter your age: ")
 
 # Outputting a message
-print("Hello, " + name + "!")
+print("Hello, " + name + "! " + age)
 
 my_list = [1, 2, 3]
 print(my_list[0])
@@ -65,14 +66,14 @@ for key, value in my_dict.items():
     print(f"{key}: {value}")
 
 # Create a list of squares using list comprehension
-squares = [x**2 for x in range(5)]
+squares = [x**3 for x in range(15)]
 print(squares)
 
-for i in range(40):
+for i in range(13):
     if i % 3 == 0:
-        print("fizz", end="")
+        print("fizz", end="!")
     if i % 5 == 0:
-        print("buzz", end="")
+        print("buzz", end="!")
     if i % 3 != 0 and i % 5 != 0:
         print(i, end="")
     print("")
